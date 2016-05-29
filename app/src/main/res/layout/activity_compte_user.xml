@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+	android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_weight="0.99"
+			android:background="#FFFFFF"
+			android:orientation="vertical" >
+
+			<TableLayout
+				android:layout_width="wrap_content"
+
+				android:layout_height="wrap_content"
+				android:background="#F5920F"
+				android:stretchColumns="*" >
+				<TableRow
+					android:id="@+id/tableRowCategories"
+					android:layout_span="2"
+					android:background="#FFFFFF"
+					android:layout_marginTop="5dp"
+					>
+					<Button
+						android:id="@+id/profile"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="10dp"
+						android:layout_marginBottom="5dp"
+						android:drawableLeft="@drawable/moncompte"
+                        android:gravity="center|left"
+						android:text=" My profile "
+						android:background="@null"
+						android:textSize="16sp"
+						/>
+				</TableRow>
+
+				<TableRow
+					android:id="@+id/tableRowName"
+					android:background="#FFFFFF">
+
+					<Button
+						android:id="@+id/setting"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="10dp"
+						android:layout_marginBottom="5dp"
+						android:drawableLeft="@drawable/rsz_setting"
+                        android:gravity="center|left"
+						android:text=" My settings "
+						android:background="@null"
+						android:textSize="16sp"
+						/>
+				</TableRow>
+				<TableRow
+					android:id="@+id/tableRow24"
+                    android:background="#FFFFFF"
+					>
+
+					<Button
+						android:id="@+id/contacts"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="10dp"
+						android:layout_marginBottom="5dp"
+						android:drawableLeft="@drawable/rsz_groupe"
+						android:gravity="center|left"
+						android:text=" Contacts / Groups "
+						android:background="@null"
+                        android:textSize="16sp"
+						/>
+				</TableRow>
+                <TableRow
+                    android:id="@+id/tableRow25"
+                    android:layout_marginBottom="2dp"
+                    android:background="#FFFFFF"
+                    >
+
+                    <Button
+                        android:id="@+id/interesting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:drawableLeft="@drawable/rsz_groupe"
+                        android:gravity="center|left"
+                        android:text=" Check this out "
+                        android:background="@null"
+                        android:textSize="16sp"
+                        />
+                </TableRow>
+            </TableLayout>
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+					<ListView android:id="@+id/listViewContact"
+						android:layout_width="fill_parent"
+						android:layout_weight="2"
+						android:scrollbars="vertical"
+						android:layout_span="6"
+						android:layout_height="450dp">
+
+					</ListView>
+                </ScrollView>
+			</LinearLayout>
+
+</RelativeLayout>

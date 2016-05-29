@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/layoutTwo"
+	android:layout_width="match_parent"
+	android:background="@drawable/fond_vert"
+	android:layout_height="match_parent">
+
+    <ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content">
+
+
+					<TextView
+						android:id="@+id/user"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/app_name"
+						android:textColor="#FFFFFF"
+						android:layout_margin="30dp"
+						android:layout_gravity="center"
+						android:textSize="35sp"
+						android:textStyle="bold" />
+
+				<Button
+					android:id="@+id/connecter"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp"
+					android:layout_marginBottom="20dp"
+					android:textStyle="bold"
+					android:textColor="#e8364139"
+					android:textAllCaps="false"
+					android:background="@drawable/button"
+					android:text="@string/sign_in"
+					android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/label_nouveau_membre"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/label_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+			    <Button
+	                    android:id="@+id/inscrire"
+	                    android:layout_width="match_parent" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+					    android:textColor="#e8364139"
+						android:textAllCaps="false"
+						android:background="@drawable/button"
+                        android:text="@string/register"
+	                    android:textSize="16sp" />
+
+
+				<TextView
+						android:id="@+id/label_mode_visiteur"
+						android:textColor="#FFFFFF"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:layout_gravity="center"
+						android:text="@string/visitor"
+                        android:layout_width="wrap_content"
+						android:layout_height="wrap_content" />
+
+					<android.support.design.widget.FloatingActionButton
+							android:id="@+id/mode_visiteur"
+							app:layout_behavior="com.team.mapsport.fab.CustomScrollAwareBehavior"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+							app:backgroundTint="#6c9164"
+							android:layout_margin="@dimen/fab_margin"
+							android:src="@android:drawable/ic_menu_mylocation"
+                        android:layout_gravity="center_horizontal" />
+
+		</LinearLayout>
+   </ScrollView>
+
+</RelativeLayout>

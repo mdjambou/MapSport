@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team.mapsport"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.team.mapsport.AccueilActivity"
+            android:label="activity_accueil" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.team.mapsport.ConnexionActivity"
+            android:label="activity_connexion"
+            android:parentActivityName="com.team.mapsport.AccueilActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team.mapsport.AccueilActivity" />
+        </activity>
+        <activity
+            android:name="com.team.mapsport.InscriptionActivity"
+            android:label="activity_inscription"
+            android:parentActivityName="com.team.mapsport.AccueilActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team.mapsport.AccueilActivity" />
+        </activity>
+        <Fragment
+            android:name=".CompteSettingActivity"
+            android:label="activity_compte_user" >
+        </Fragment>
+
+        <Fragment
+            android:name="com.team.mapsport.MainActivity"
+            android:label="@string/app_name" >
+        </Fragment>
+ 		<Fragment
+            android:name="com.team.mapsport.CreateEventActivity"
+            android:label="@string/title_activity_flash_alerte" >
+        </Fragment>
+        <Fragment
+            android:name="com.team.mapsport.ActuEventListActivity"
+            android:label="@string/title_activity_warn_list" >
+        </Fragment>
+
+        <activity
+            android:name="com.team.mapsport.tabsswipe.TabSwipeMainActivity"
+            android:label="activity_tab_swipe_main" >
+        </activity>
+    </application>
+
+</manifest>

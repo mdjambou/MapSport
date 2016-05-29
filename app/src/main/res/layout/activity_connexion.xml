@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/actionBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:contentInsetEnd="0dp"
+		app:contentInsetStart="0dp" >
+
+	<ScrollView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent">
+
+
+		<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content">
+
+
+		         <EditText
+	                        android:id="@+id/email"
+						   	android:layout_margin="20dp"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="40dp"
+	                        android:hint="@string/email"
+		        		 	android:inputType="textEmailAddress" />
+
+		            <requestFocus />
+		        <EditText
+	                        android:id="@+id/mdp"
+							android:layout_marginLeft="20dp"
+							android:layout_marginRight="20dp"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="40dp"
+	                        android:hint="@string/password"
+	                        android:password="true" />
+
+
+			    <Button
+	                    android:id="@+id/connecter"
+	                    android:layout_width="match_parent" 
+					    android:layout_height="wrap_content"
+						android:layout_margin="20dp"
+					    android:textStyle="bold"
+					    android:textColor="#FFFFFF"
+						android:textAllCaps="false"
+						android:background="#e8364139"
+                        android:text="@string/sign_in"
+	                    android:textSize="16sp" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginTop="10dp"
+					android:gravity="center|bottom">
+
+					<Button
+							android:id="@+id/passwordForgot"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="right"
+							android:gravity="right"
+							android:textColor="#e8364139"
+							android:textStyle="bold"
+							android:textAllCaps="false"
+							android:background="#00000000"
+							android:text="@string/password_forgot"
+							android:textSize="16sp" />
+
+				</LinearLayout>
+
+		</LinearLayout>
+   </ScrollView>
+</android.support.v7.widget.Toolbar>

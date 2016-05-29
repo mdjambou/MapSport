@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MapSport</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <!-- Inscription et Connexion-->
+    <string name="sign_in">Se connecter</string>
+    <string name="register">Créer un compte</string>
+    <string name="visitor"><u>Accéder en mode visiteur</u></string>
+    <string name="password_forgot"><u>Mot de passe oublié?</u></string>
+    <string name="label_sign_up"><u><b>Nouveau membre !</b></u></string>
+    <string name="back_to_sign_in"><u><b>Back to Sign in</b></u></string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+
+
+    <string name="title_activity_flash_alerte">FlashAlerte</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_warn_list">WarnListActivity</string>
+    <string name="title_activity_detail_warning">DetailWarningActivity</string>
+    <string name="title_activity_fragment">FragmentsSliderActivity</string>
+    
+    <string name="leisure_prompt">Choose your hobby</string>
+ 
+    <string-array name="leisure_arrays">
+        <item></item>
+    </string-array>
+
+    <string name="category_prompt">Choose your category</string>
+
+    <string-array name="category_arrays">
+        <item>Culture</item>
+        <item>Loisirs</item>
+        <item>Musique</item>
+        <item>Sorties</item>
+        <item>Sport</item>
+    </string-array>
+
+</resources>
+

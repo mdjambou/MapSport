@@ -1,0 +1,48 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+         <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:layout_marginTop">1dp</item>
+		<item name="android:layout_marginBottom">5dp</item>
+	</style>
+	
+     <style name="buttonLeisure">
+		<item name="android:background">@drawable/button_leisure</item>
+	</style>
+
+	<style name="buttonClock">
+	   	<item name="android:background">@drawable/button_clock</item>         
+	</style>
+	<style name="buttonAddLeisure">
+	   	<item name="android:background">@drawable/button_add_leisure</item>         
+	</style>
+	<style name="buttonSmallAdd" parent="@android:attr/buttonBarButtonStyle">
+	   	<item name="android:background">@drawable/button_small_add</item>
+	</style>
+    <style name="buttonSmallRemove" parent="@android:attr/buttonBarButtonStyle">
+        <item name="android:background">@drawable/button_small_remove</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

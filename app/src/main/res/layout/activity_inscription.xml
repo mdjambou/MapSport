@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+	 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/layoutTwo"
+	        android:layout_width="match_parent"
+			android:background="@drawable/fond_vert"
+	        android:layout_height="match_parent" >
+		<ScrollView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent">
+				<TableLayout android:layout_width="match_parent"
+								    android:layout_height="wrap_content" 
+								    android:layout_marginLeft="15dp"
+						   			android:layout_marginRight="15dp"
+						   			android:stretchColumns="*" >
+		      
+				    <TextView
+	                        android:id="@+id/user"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"	                        
+	                        android:layout_margin="80dp"
+	                        android:layout_span="3"
+	                        android:layout_weight="1"
+	                        android:gravity="center"
+	                        android:text="D.I.Now "
+	                        android:textColor="#ffffff"
+	                        android:textSize="35sp"
+	                        android:textStyle="bold" />
+					<EditText
+						android:id="@+id/email"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+						android:background="#FFFFFF"
+						android:layout_width="wrap_content"
+						android:layout_height="40dp"
+						android:gravity="center"
+						android:hint="E-mail address"
+						/>
+					<requestFocus />
+
+					<EditText
+						android:id="@+id/pseudo"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+						android:layout_marginTop="2dp"
+						android:background="#FFFFFF"
+						android:layout_width="wrap_content"
+						android:layout_height="40dp"
+						android:gravity="center"
+						android:hint="Pseudo" />
+					<EditText
+						android:id="@+id/mdp"
+						android:gravity="center"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+						android:layout_marginTop="2dp"
+						android:background="#FFFFFF"
+						android:layout_width="wrap_content"
+						android:layout_height="40dp"
+						android:hint="Password"
+						android:password="true" />
+
+					<EditText
+						android:id="@+id/firstname"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+						android:layout_marginTop="2dp"
+						android:background="#FFFFFF"
+						android:layout_width="wrap_content"
+						android:layout_height="40dp"
+						android:gravity="center"
+						android:hint="First name"
+						/>
+
+					<EditText
+						android:id="@+id/lastname"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+						android:layout_marginTop="2dp"
+						android:background="#FFFFFF"
+						android:layout_width="wrap_content"
+						android:layout_height="40dp"
+						android:gravity="center"
+						android:hint="Last name"
+						/>
+
+			    <Button
+	                    android:id="@+id/inscrire"
+	                    android:layout_width="match_parent" 
+					    android:layout_height="wrap_content"
+						android:layout_marginLeft="20dp"
+						android:layout_marginRight="20dp"
+						android:layout_marginBottom="40dp"
+						android:layout_marginTop="20dp"
+						android:textStyle="bold"
+						android:textColor="#F5920F"
+						android:background="@drawable/button"
+	                    android:text="Join us "
+	                    android:textSize="18sp" />
+					<Button
+						android:id="@+id/signinredirect"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="20dp"
+						android:gravity="left"
+						android:textColor="#FFFFFF"
+						android:background="#00000000"
+						android:text="@string/back_to_sign_in"
+						android:textSize="14sp" />
+		</TableLayout>
+	</ScrollView>
+</RelativeLayout>
